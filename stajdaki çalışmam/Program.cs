@@ -204,7 +204,7 @@ namespace stajdaki_çalışmam
             Console.ReadLine();
             */
 
-            
+
             //Ve operarörü:  &&
 
             /*
@@ -230,7 +230,7 @@ namespace stajdaki_çalışmam
 
 
             //Değil Operatörü: ! (Var olan değerin zıttını söyler.)
-            
+
             /*
             bool a = true;
             Console.WriteLine(!a);
@@ -371,7 +371,7 @@ namespace stajdaki_çalışmam
                 Console.ReadLine();
             }
             
-             */
+            */
 
 
             //Uygulama
@@ -433,11 +433,6 @@ namespace stajdaki_çalışmam
             // FOR DÖNGÜSÜ
 
 
-
-
-
-
-
             /*
             for(degisken_adi = baslangıcDegeri; koşul; arttırmaAzaltma)
             {
@@ -448,9 +443,8 @@ namespace stajdaki_çalışmam
 
 
 
-
-
             //Uygulama 1
+
             // 1 den 10 a kadar olan sayıları alt alta yazdıralım.
 
             /*
@@ -464,14 +458,186 @@ namespace stajdaki_çalışmam
             */
 
             //Uygulama 2
+
             //1 den 10a kadar olan sayılardan çift olanları yazdıralım.
 
-            for (int i = 0; i <= 10; i=i+2) 
-            {
-                Console.WriteLine(i);
-            }
+            /*
+             for (int i = 0; i <= 10; i=i+2) 
+             {
+                 Console.WriteLine(i);
+             }
 
+             Console.ReadLine();
+            */
+
+
+            //İç içe for döngüsü (atladım bunu,daha sonra bak)
+
+            /*
+            for (int i = 1; i <=10; i++) 
+            {
+                for (int j = 1; j <=i; j++)
+                {
+                    Console.Write(j);
+                }
+                Console.WriteLine();
+            }
             Console.ReadLine();
+            */
+
+
+
+            //Uygulama ( Çıktıda ilk satıra 123, ikinci satıra 456 yazdırmaya çalışıyoruz )
+
+            /*
+            
+            for (int j = 1; j <= 6; j++)
+            {
+                if (j == 4)
+                {
+                    Console.WriteLine();
+                }
+                Console.Write(j);
+            }
+            
+            Console.ReadLine();
+            */
+
+
+
+            // WHILE DONGUSU           ( For döngüsü ile aynı işlevde )
+
+
+
+            // Birinci Uygulama
+
+            /*
+            int a=1;
+            while (a<=10) 
+            {
+                Console.WriteLine(a);
+                a++;
+            }
+            Console.ReadLine();
+            */
+
+
+
+
+            // İkinci Uygulama                 Yüzden sıfıra kadar olan sayılardan çift olanları büyükten küçüğe doğru sıralıyoruz
+
+
+            /*
+            int a = 100;
+            while (a >= 0)
+            {
+                Console.WriteLine(a);
+                a = a - 2;
+            }
+            Console.ReadLine();
+            */
+
+
+            /*
+            int a = 102;
+            while (a <= 102)
+            {
+                a = a - 2;
+                Console.WriteLine(a);
+
+                if (a == 0)
+                {
+                    break;
+                }
+            }
+            Console.ReadLine();
+            */
+
+
+
+
+            // DO WHILE DONGUSU
+
+
+            // Birinci Uygulama     1'den 10'a kadar olan sayıları do wehile kulanarak yaz
+
+
+            /*
+            int a = 1;
+            do
+            {
+               Console.WriteLine(a);
+               a++;
+            } while (a <= 10);
+            
+              Console.ReadLine();
+            */
+
+
+
+            // İkinci Uygulama        1den 100e kadar olan sayıların toplamınıdo while kullanarak yaz
+
+            /*
+            int a = 1;
+            int toplam = 0;
+            do
+            {
+                toplam = toplam + a;
+                a++;
+            } while (a <= 100);
+
+            Console.WriteLine("1 den 100e kadar olan sayıların toplamı: " + toplam);
+            Console.ReadLine();
+            */
+
+
+
+
+
+            // BREAK & CONTINUE
+
+
+            // BREAK
+            // Break döngüyü kırmıya yarar.
+            // Bu örnekte döngü sekize geldiğinde kırılıyor ve kendisi ile birlikte sonrasında gelen sayılar çıktıda yer almasına izin vermiyor.
+
+            /*
+            for (int a = 1; a <=10; a++) 
+            {
+                if (a == 8)
+                {
+                    break;                
+                }
+                Console.WriteLine(a);
+            }
+                Console.ReadLine();
+            */
+
+
+
+            // CONTINUE
+            // Continue döngünün bir defaya mahsus kırılmasını sağlar. Kırıldığı noktaya çıktıda yer vermez,döngü kırıldığı noktanın sonrasında kaldığı yerden devam eder.
+            // Bu örnekte döngü 8 de bir defaya mahsus kırıldıgı için çıktıda sadece 8 yer almaz,diğer tüm değerler çıktıda yer alır. 
+            
+            /*
+            for (int a = 1; a <= 10; a++)
+            {
+                if (a == 8)
+                {
+                   continue;            
+                }
+                Console.WriteLine(a);
+            }
+            Console.ReadLine();
+            */
+
+
+
+
+
+
+
+
         }
     }
 }
